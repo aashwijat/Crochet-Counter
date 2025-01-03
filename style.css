@@ -4,8 +4,30 @@
     font-size: 50px;
     font-family: 'Magic Retro';
 }
+#rowLabel {
+    display:block;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Magic Retro';
+}
 #head {
     font-family: 'Magic Retro';
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    /* display: block; */
+}
+
+button {
+    background-color:#261700;
+    color: antiquewhite;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius:20px;
+    padding:10px;
+    width:90px;
 }
