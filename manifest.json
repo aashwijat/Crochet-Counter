@@ -1,0 +1,15 @@
+{
+    "name":"Stitch Counter",
+    "version":"1.0.0",
+    "description":"Stitch counter for your crochet projects!",
+    "manifest_version":3,
+    "author":"Aashwija Thantry",
+    "action": {
+        "default_popup":"index.html",
+        "default_title":"Stitch Counter",
+        "default_icon":"logo.png"
+    },
+    "icons": {
+        "128":"logo.png"
+    }   
+}
