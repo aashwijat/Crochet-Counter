@@ -1,5 +1,7 @@
 let count = 0;
 let rowCount = 0;
+var base = document.getElementsByName("base").checked;
+var x = parseInt(base,10);
 
 // Stitch counter
 document.getElementById("dec").onclick=function(){
@@ -19,7 +21,7 @@ document.getElementById("res").onclick=function(){
 }
 
 document.getElementById("inc").onclick=function(){
-    count+=1;
+    count=count+x;
     document.getElementById("countLabel").innerHTML=count;
 }
 
