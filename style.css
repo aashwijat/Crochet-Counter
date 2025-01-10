@@ -1,13 +1,13 @@
 #countLabel {
     display:block;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Magic Retro';
 }
 #rowLabel {
     display:block;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Magic Retro';
 }
 #head {
@@ -21,6 +21,7 @@ td {
     padding: 20px;
     /* display: block; */
 }
+
 
 button {
     background-color:#261700;

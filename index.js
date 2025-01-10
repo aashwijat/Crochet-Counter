@@ -1,7 +1,28 @@
 let count = 0;
 let rowCount = 0;
-var base = document.getElementsByName("base").checked;
-var x = parseInt(base,10);
+let radioBtn = document.querySelectorAll("input[name='base']")
+let radioBtn2 = document.querySelectorAll("input[name='base1']");
+var y = 0;
+var x = 0;
+
+let findSelected = () => {
+    let selected = document.querySelector("input[name='base']:checked").value;
+    x = parseInt(selected);
+}
+
+let findSelected1 = () => {
+    let selected1 = document.querySelector("input[name='base1']:checked").value;
+    y = parseInt(selected1);
+}
+
+radioBtn.forEach(radioBtn=>{
+    addEventListener("change",findSelected);
+});
+
+radioBtn2.forEach(radioBtn2=>{
+    addEventListener("change",findSelected1);
+});
+
 
 // Stitch counter
 document.getElementById("dec").onclick=function(){
@@ -43,6 +64,6 @@ document.getElementById("res1").onclick=function(){
 }
 
 document.getElementById("inc1").onclick=function(){
-    rowCount+=1;
+    rowCount+=y;
     document.getElementById("rowLabel").innerHTML=rowCount;
 }
